@@ -292,4 +292,6 @@ def pie_chart(one_group):
         scat = px.scatter(x=active_years, y=attacks_carried_out)
         return scat, pie
 
-app.run_server(debug=False)
+
+if __name__ == '__main__':
+    app.run_server(debug=False)
