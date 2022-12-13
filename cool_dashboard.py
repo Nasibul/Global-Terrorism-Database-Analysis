@@ -42,7 +42,6 @@ mode_of_attack = raw_data[['Year', 'gname', 'attacktype1_txt']]
 mode_of_attack["Count"] = 1
 
 app = dash.Dash(__name__)
-server = app.server
 colors = {'background': '#1f2630', 'text': '#77afdf'}
 app.layout = html.Div(children=[
     html.H1(children="Global Terrorism Analysis", style={
