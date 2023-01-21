@@ -1,7 +1,7 @@
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
-from pandas.core.common import SettingWithCopyWarning
+# from pandas.core.common import SettingWithCopyWarning
 import dash
 import warnings
 import plotly.graph_objects as go
@@ -11,7 +11,7 @@ import plotly.io as pio
 pio.renderers.default = 'notebook'
 pio.templates.default = "plotly_dark"
 
-warnings.simplefilter(action='ignore', category=SettingWithCopyWarning)
+# warnings.simplefilter(action='ignore', category=SettingWithCopyWarning)
 data1 = pd.read_excel("globalterrorismdb_0221dist.xlsx")
 data2 = pd.read_excel("gtd1993_0221dist.xlsx")
 # data1 is the main archives while data2 is the missing 1993 records that were recovered later.
